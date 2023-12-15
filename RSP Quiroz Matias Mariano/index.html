@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Recuperatorio SP LAB III</title>
+  </head>
+  <body id="cuerpo">
+    <div class="spinner-container" id="spinner">
+      <div class="spinner"></div>
+    </div>
+    <form id="form-data-container">
+      <div id="title-form">
+          Fomulario Datos
+      </div>
+      <div id="table-container">
+        <table id="data-table">
+            <thead id="header"></thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <div id="buttons-container">
+      <div>
+          <button type="submit" id="btn_add">Agregar</button>
+      </div>
+  </div>
+    </form>
+    <form id="form-amb-container" class="hidden">
+      <h1 id="title-form">
+          ABM
+      </h1>
+      <div id="inputs-container">
+          <div id="default-inputs-container"></div>
+          <div id="input-field">
+              <label for="dll-type-person">Tipo:</label>
+              <select id="dll-type-person" name="types-people">
+                  <option value="ciudadano">Ciudadano</option>
+                  <option value="extranjero">Extranjero</option>
+              </select>
+          </div>
+          <div id="dynamic-inputs-container"></div>
+      </div>
+      <div id="buttons-container">
+          <div>
+              <button type="submit" id="btn-accept">Aceptar</button>
+              <button type="button" id="btn-cancel">Cancelar</button>
+          </div>
+      </div>
+  </form>
+  </body>
+    <script src="Classes\Persona.js"></script>
+    <script src="Classes\Extranjero.js"></script>
+    <script src="Classes\Ciudadano.js"></script>
+    <script src="constant.js"></script>
+    <script src="request.js"></script>
+    <script src="main.js"></script>
+</html>
